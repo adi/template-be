@@ -1,0 +1,29 @@
+{
+  "name": "template-be",
+  "version": "1.0.0",
+  "description": "Template BE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adi/template-be.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "tsc-watch": "tsc -w",
+    "build": "tsc",
+    "watch": "supervisor -w ./dist,./config -e js,yml ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "latest",
+    "js-yaml": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/clone": "latest",
+    "@types/es6-promise": "latest",
+    "@types/js-yaml": "latest",
+    "supervisor": "latest",
+    "typescript": "rc"
+  }
+}
